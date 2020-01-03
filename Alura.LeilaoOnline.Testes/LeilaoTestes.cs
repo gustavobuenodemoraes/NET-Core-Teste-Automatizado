@@ -1,24 +1,19 @@
-﻿using System;
-using Alura.LeilaoOnline.Core;
+﻿using Alura.LeilaoOnline.Core;
+using Xunit;
 
-namespace Alura.LeilaoOnline.ConsoleApp
+namespace Alura.LeilaoOnline.Testes
 {
-    class Program
+    public class LeilaoTestes
     {
-        static void Main(string[] args)
-        {
-            LeilaoComVariosValores();
-            LeilaoComUnicoValores();
-        }
-
-        private static void LeilaoComUnicoValores()
+        [Fact]
+        public void LeilaoComUnicoValores()
         {
             //Arranje - cenário
             var leilao = new Leilao("Van Gogh");
             var fulano = new Interessada("Fulano", leilao);
 
 
-            leilao.RecebeLance(fulano, 800);
+            leilao.RecebeLance(fulano, 1000);
 
             //Act - método sob teste
             leilao.TerminaPregao();
@@ -26,13 +21,10 @@ namespace Alura.LeilaoOnline.ConsoleApp
             //Assert
             var valorEsperado = 1000;
             var valorObtido = leilao.Ganhador.Valor;
-            if (valorEsperado == valorObtido)
-                Console.WriteLine("TESTE - OK");
-            else
-                Console.WriteLine("TESTE - Falha!");
         }
 
-        private static void LeilaoComVariosValores()
+        [Fact]
+        public void LeilaoComVariosValores()
         {
             //Arranje - cenário
             var leilao = new Leilao("Van Gogh");
@@ -42,7 +34,7 @@ namespace Alura.LeilaoOnline.ConsoleApp
 
             leilao.RecebeLance(fulano, 800);
             leilao.RecebeLance(maria, 900);
-            leilao.RecebeLance(fulano, 1100);
+            leilao.RecebeLance(fulano, 1000);
 
             //Act - método sob teste
             leilao.TerminaPregao();
@@ -50,10 +42,8 @@ namespace Alura.LeilaoOnline.ConsoleApp
             //Assert
             var valorEsperado = 1000;
             var valorObtido = leilao.Ganhador.Valor;
-            if (valorEsperado == valorObtido)
-                Console.WriteLine("TESTE - OK");
-            else
-                Console.WriteLine("TESTE - Falha!");
+
+            Assert.Equal(valorEsperado, valorObtido);
         }
     }
 }
