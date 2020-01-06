@@ -12,3 +12,16 @@ C:\Users\User\source\repos\Aprendizado\Alura.LeilaoOnline\ConsoleApp1\obj\Debug\
 C:\Users\User\source\repos\Aprendizado\Alura.LeilaoOnline\ConsoleApp1\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.csproj.CopyComplete
 C:\Users\User\source\repos\Aprendizado\Alura.LeilaoOnline\ConsoleApp1\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.dll
 C:\Users\User\source\repos\Aprendizado\Alura.LeilaoOnline\ConsoleApp1\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.pdb
+C:\Users\gusta\source\repos\gustavobuenodemoraes\NET-Core-TDD-com-xUnit\ConsoleApp1\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.deps.json
+C:\Users\gusta\source\repos\gustavobuenodemoraes\NET-Core-TDD-com-xUnit\ConsoleApp1\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.runtimeconfig.json
+C:\Users\gusta\source\repos\gustavobuenodemoraes\NET-Core-TDD-com-xUnit\ConsoleApp1\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.runtimeconfig.dev.json
+C:\Users\gusta\source\repos\gustavobuenodemoraes\NET-Core-TDD-com-xUnit\ConsoleApp1\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.dll
+C:\Users\gusta\source\repos\gustavobuenodemoraes\NET-Core-TDD-com-xUnit\ConsoleApp1\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.pdb
+C:\Users\gusta\source\repos\gustavobuenodemoraes\NET-Core-TDD-com-xUnit\ConsoleApp1\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.Core.dll
+C:\Users\gusta\source\repos\gustavobuenodemoraes\NET-Core-TDD-com-xUnit\ConsoleApp1\bin\Debug\netcoreapp2.1\Alura.LeilaoOnline.Core.pdb
+C:\Users\gusta\source\repos\gustavobuenodemoraes\NET-Core-TDD-com-xUnit\ConsoleApp1\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\gusta\source\repos\gustavobuenodemoraes\NET-Core-TDD-com-xUnit\ConsoleApp1\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\gusta\source\repos\gustavobuenodemoraes\NET-Core-TDD-com-xUnit\ConsoleApp1\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.AssemblyInfo.cs
+C:\Users\gusta\source\repos\gustavobuenodemoraes\NET-Core-TDD-com-xUnit\ConsoleApp1\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.csproj.CopyComplete
+C:\Users\gusta\source\repos\gustavobuenodemoraes\NET-Core-TDD-com-xUnit\ConsoleApp1\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.dll
+C:\Users\gusta\source\repos\gustavobuenodemoraes\NET-Core-TDD-com-xUnit\ConsoleApp1\obj\Debug\netcoreapp2.1\Alura.LeilaoOnline.ConsoleApp.pdb
