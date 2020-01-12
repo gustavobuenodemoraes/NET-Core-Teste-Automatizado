@@ -13,26 +13,35 @@ namespace Alura.LeilaoOnline.Core
         }
 
         private readonly IList<Lance> _lances;
-
-
-        public Leilao(string peca)
-        {
-            Peca = peca;
-            _lances = new List<Lance>();
-            Estado = EstadoLeilao.LeilaoAntesDoPregao;
-        }
-
+        private Interessada _ultimoCliente;
+        private IModalidadeAvaliacao _avaliador;
         public IEnumerable<Lance> Lances => _lances;
         public string Peca { get; }
         public Lance Ganhador { get; private set; }
         public EstadoLeilao Estado { get; private set; }
 
+
+        public Leilao(string peca, IModalidadeAvaliacao avalidaor)
+        {
+            Peca = peca;
+            _lances = new List<Lance>();
+            Estado = EstadoLeilao.LeilaoAntesDoPregao;
+            _avaliador = avalidaor;
+        }
+
+        private bool LanceInvalido(Interessada cliente, double valor)
+        {
+            return (Estado != EstadoLeilao.LeilaoEmAndamento) || (cliente == _ultimoCliente);
+        }
+
         public void RecebeLance(Interessada cliente, double valor)
         {
-            if (Estado == EstadoLeilao.LeilaoEmAndamento)
-            {
-                _lances.Add(new Lance(cliente, valor));
-            }
+            if (LanceInvalido(cliente, valor))
+                return;
+
+            _lances.Add(new Lance(cliente, valor));
+            _ultimoCliente = cliente;
+
         }
 
         public void IniciaPregao()
@@ -42,10 +51,14 @@ namespace Alura.LeilaoOnline.Core
 
         public void TerminaPregao()
         {
-            Ganhador = Lances
-                .DefaultIfEmpty(new Lance(null, 0))
-                .OrderBy(x => x.Valor)
-                .LastOrDefault();
+            if (Estado != EstadoLeilao.LeilaoEmAndamento)
+                throw new System
+                    .InvalidOperationException(
+                        "Não é possível terminar o pregão sem que ele tenha começado.Para isso, Utilize o método IniciarPregao()"
+                    );
+
+            Ganhador = _avaliador.Avalia(this);
+
             Estado = EstadoLeilao.LeilaoFinalizado;
         }
     }
