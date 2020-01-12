@@ -14,10 +14,10 @@ namespace Alura.LeilaoOnline.Core
         public Lance Avalia(Leilao leilao)
         {
             return leilao.Lances
-                    .DefaultIfEmpty(new Lance(null, 0))
-                    .Where(l => l.Valor > ValorDestino)
-                    .OrderBy(l => l.Valor)
-                    .FirstOrDefault();
+                .DefaultIfEmpty(new Lance(null, 0))
+                .Where(l => l.Valor > ValorDestino)
+                .OrderBy(l => l.Valor)
+                .FirstOrDefault();
         }
     }
 }

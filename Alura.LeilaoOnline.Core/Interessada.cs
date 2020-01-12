@@ -1,14 +1,19 @@
-﻿namespace Alura.LeilaoOnline.Core
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
+namespace Alura.LeilaoOnline.Core
 {
     public class Interessada
     {
-        public string Nome { get; }
-        public Leilao Leilao { get; }
+        public int Id { get; set; }
+        [Required]
+        public string Nome { get; private set; }
+        public IEnumerable<Lance> Lances { get; set; }
+        public IEnumerable<Favorito> Favoritos { get; set; }
 
-        public Interessada(string nome, Leilao leilao)
+        public Interessada(string nome)
         {
             Nome = nome;
-            Leilao = leilao;
         }
     }
 }

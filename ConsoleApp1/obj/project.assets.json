@@ -210,7 +210,7 @@
       },
       "Alura.LeilaoOnline.Core/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
+        "framework": "Unsupported,Version=v0.0",
         "compile": {
           "bin/placeholder/Alura.LeilaoOnline.Core.dll": {}
         },
@@ -569,6 +569,7 @@
       "path": "netstandard.library/2.0.3",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -764,5 +765,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Alura.LeilaoOnline.Core is not compatible with netcoreapp2.1 (.NETCoreApp,Version=v2.1). Project Alura.LeilaoOnline.Core supports: netcoreapp2.2 (.NETCoreApp,Version=v2.2)",
+      "libraryId": "Alura.LeilaoOnline.Core",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }
