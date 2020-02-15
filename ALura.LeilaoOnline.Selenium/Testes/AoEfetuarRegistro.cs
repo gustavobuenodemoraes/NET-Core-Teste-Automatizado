@@ -87,7 +87,8 @@ namespace ALura.LeilaoOnline.Selenium.Testes
             //act
             botaoRegistro.Click();
             //assert
-            Assert.True("The Nome field is required.", _driver.PageSource);
+            IWebElement element = _driver.FindElement(By.CssSelector("span#Nome-error"));
+            Assert.True(element.Displayed);
         }
     }
 }
