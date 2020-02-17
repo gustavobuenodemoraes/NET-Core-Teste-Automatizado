@@ -90,5 +90,20 @@ namespace ALura.LeilaoOnline.Selenium.Testes
             IWebElement element = _driver.FindElement(By.CssSelector("span#Nome-error"));
             Assert.True(element.Displayed);
         }
+
+        [Fact]
+        public void DadoChromeAbertoFormDeveMostraProximosLeiloesPagina()
+        {
+            //arrange
+            _driver.Navigate().GoToUrl("http://localhost:5000");
+
+            var botaoRegistro = _driver.FindElement(By.Id("btnRegistro"));
+
+            //act
+            botaoRegistro.Click();
+            //assert
+            IWebElement element = _driver.FindElement(By.CssSelector("span.msg-erro[data-valmsg-for=Email]"));
+            Assert.Equal("Please enter a valid email address.",element.Text);
+        }
     }
 }
