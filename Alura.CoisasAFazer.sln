@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alura.CoisasAFazer.WebApp",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alura.CoisasAFazer.ConsoleApp", "tests\Alura.CoisasAFazer.ConsoleApp\Alura.CoisasAFazer.ConsoleApp.csproj", "{EC73DC61-C88A-4FF1-84CE-BE4029AF676E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alura.CoisasAFazer.Testes", "tests\Alura.CoisasAFazer.Testes\Alura.CoisasAFazer.Testes.csproj", "{8314395A-CD10-491C-A9D9-863EF582D060}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alura.CoisasAFazer.Testes", "Alura.CoisasAFazer.Testes\Alura.CoisasAFazer.Testes.csproj", "{7F48CE25-BE81-425F-8D1F-737C9F9C9422}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,10 +45,10 @@ Global
 		{EC73DC61-C88A-4FF1-84CE-BE4029AF676E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC73DC61-C88A-4FF1-84CE-BE4029AF676E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC73DC61-C88A-4FF1-84CE-BE4029AF676E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8314395A-CD10-491C-A9D9-863EF582D060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8314395A-CD10-491C-A9D9-863EF582D060}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8314395A-CD10-491C-A9D9-863EF582D060}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8314395A-CD10-491C-A9D9-863EF582D060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F48CE25-BE81-425F-8D1F-737C9F9C9422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F48CE25-BE81-425F-8D1F-737C9F9C9422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F48CE25-BE81-425F-8D1F-737C9F9C9422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F48CE25-BE81-425F-8D1F-737C9F9C9422}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,7 +59,7 @@ Global
 		{40D8BD60-FC11-454A-8E2B-03AA801E592E} = {670522DB-C1A6-48AD-8B58-DEAD356C4010}
 		{33A3FD7A-FED3-4E79-953C-BE31EC561F7A} = {670522DB-C1A6-48AD-8B58-DEAD356C4010}
 		{EC73DC61-C88A-4FF1-84CE-BE4029AF676E} = {99F2C0DF-46A5-4E43-95C1-CB0821DA7284}
-		{8314395A-CD10-491C-A9D9-863EF582D060} = {99F2C0DF-46A5-4E43-95C1-CB0821DA7284}
+		{7F48CE25-BE81-425F-8D1F-737C9F9C9422} = {99F2C0DF-46A5-4E43-95C1-CB0821DA7284}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9379DB86-5F18-4A1A-851A-43F7BF219755}
